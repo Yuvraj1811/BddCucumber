@@ -1,0 +1,24 @@
+{
+  "name": "cypresscucumberbdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Dashboard": "npx cypress run --record --key b52fdb60-3425-419f-8c06-9b5c9f9c059d"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.3",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinition": true,
+    "step_definitions": "cypress/e2e/**"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "cucumber": "^6.0.7"
+  }
+}
